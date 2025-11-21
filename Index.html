@@ -8,10 +8,39 @@
 </head>
 <body>
     <div class="container">
-        <img src="krypt-logo-animated.gif" class="logo" alt="KRYPT Logo">
+        <!-- LOGO KRYPT EN SVG ANIMÉ -->
+        <svg id="krypt-logo" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg">
+            <!-- Glow -->
+            <defs>
+                <filter id="glow">
+                    <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+                    <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+
+            <!-- Cristal principal -->
+            <polygon 
+                class="crystal"
+                filter="url(#glow)"
+                points="100,10 30,90 55,240 145,240 170,90"
+            />
+
+            <!-- Fissures -->
+            <polyline class="crack" points="100,20 95,80 110,140 100,200" />
+            <polyline class="crack" points="80,70 100,120 85,190" />
+            <polyline class="crack" points="120,70 110,130 130,200" />
+        </svg>
+
         <h1>Crypto made for superheroes.</h1>
         <h2>Unleash your inner superhero.</h2>
-        <a class="download-btn" href="krypt-logo-animated.gif" download>⬇ Download Logo 🔥</a>
+
+        <!-- Bouton “download” (capture possible, mais pas un vrai fichier généré ici) -->
+        <p class="hint">
+            Tip: tap and hold the logo to save it as an image on your phone.
+        </p>
     </div>
 </body>
 </html>
