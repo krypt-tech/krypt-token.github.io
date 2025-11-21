@@ -1,0 +1,41 @@
+body {
+    background-color: #000;
+    color: #00ff99;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.logo {
+    width: 280px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 12px #00ff99;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+    opacity: 0.85;
+}
+
+.download-btn {
+    display: inline-block;
+    background: #00ff99;
+    padding: 12px 20px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 0 12px #00ff99;
+}
